@@ -6,8 +6,45 @@
  * @return {Boolean}
  */
 function isUndefined(val) {
-	if (val === undefined) return true;
-	return false;
+	return val === undefined;
 }
 
-module.exports.isUndefined = isUndefined;
+/**
+ * Is `val` null | undefined?
+ *
+ * @param  {Mixed} val
+ * @return {Boolean}
+ */
+function isNull(val) {
+	// null == undefined but not (null === undefined)
+	return val == null;
+}
+
+/**
+ * Is `val` an object?
+ *
+ * @param  {Mixed} val
+ * @return {Boolean}
+ */
+function isObject(val) {
+	return typeof val === "object";
+}
+
+/**
+ * Export `isUndefined`
+ *
+ * @type {Function}
+ *
+ * Export `isNull`
+ *
+ * @type {Function}
+ *
+ * Export `isObject`
+ *
+ * @type {Function}
+ */
+module.exports = {
+	isUndefined: isUndefined,
+	isNull: isNull,
+	isObject: isObject,
+};

@@ -2,6 +2,8 @@
 
 Is the variable blank?
 
+#### These functions are trivial, just code 'em yourself.
+
 ## Install
 
 ```
