@@ -1,6 +1,6 @@
 {
 	"name": "@ootiq/blank",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Is the variable blank?",
 	"main": "src/index.js",
 	"license": "Unlicense",
