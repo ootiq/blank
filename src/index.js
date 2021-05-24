@@ -31,6 +31,25 @@ function isObject(val) {
 }
 
 /**
+ * It returns a re-parsed json.
+ *
+ * @param  {object} json
+ */
+function jsonify(json) {
+	return JSON.parse(JSON.stringify(json));
+}
+
+/**
+ * It returns just a string.
+ *
+ * @param  {string | string[]} v
+ * @returns string
+ */
+function joinString(v) {
+	return Array.isArray(v) ? v.join() : v;
+}
+
+/**
  * Export `isUndefined`
  *
  * @type {Function}
@@ -44,7 +63,9 @@ function isObject(val) {
  * @type {Function}
  */
 module.exports = {
-	isUndefined: isUndefined,
-	isNull: isNull,
-	isObject: isObject,
+	isUndefined,
+	isNull,
+	isObject,
+	jsonify,
+	joinString,
 };

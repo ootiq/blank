@@ -1,6 +1,6 @@
 # blank
 
-Is the variable blank?
+Just simple functions.
 
 #### These functions are trivial, just code 'em yourself.
 
